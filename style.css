@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: 65vw;
+    height: 60vh;
+    background: #222;
+}
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+
+}
+.clip1 {
+    background-image: url(https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 20% 0, 35% 100%, 0% 100%);
+}
+ 
+.clip2 {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BYjA2MDM2YjctYzNhNC00NGEzLWFmYWEtODExODFkNmUyOGE2XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_FMjpg_UX1000_.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0, 80% 0, 55% 100%, 35% 100%);
+
+    
+}
+.clip3 {
+    background-image: url(https://bd.gaadicdn.com/processedimages/indian/scout-bobber/source/scout-bobber62eb4a0d92990.jpg?tr=w-880,h-495);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 55% 100%);
+
+ } 
+
+ .container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+ }
+ .container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+ 
